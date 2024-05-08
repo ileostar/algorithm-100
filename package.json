@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "vitest",
+    "test:watch": "vitest --watch",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
     "plop": "plop"
