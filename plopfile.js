@@ -11,17 +11,17 @@ export default function (plop) {
         type: 'input',
         name: 'name',
         message: '请输入你要新建的文件名称',
-      }
+      },
     ],
     actions: [{
       type: 'add',
       path: 'src/{{number}}-{{dashCase name}}/index.ts',
       templateFile: 'plop-template/index.hbs',
-    },{
+    }, {
       type: 'add',
       path: 'src/{{number}}-{{dashCase name}}/index.spec.ts',
       templateFile: 'plop-template/index.spec.hbs',
-    },{
+    }, {
       type: 'add',
       path: 'src/{{number}}-{{dashCase name}}/readme.md',
       templateFile: 'plop-template/readme.hbs',
