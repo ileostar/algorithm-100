@@ -24,9 +24,9 @@ function getCurrentFileNum(dirPath) {
 // 使用示例
 export default async function (plop) {
   let number = await getCurrentFileNum('./src')
-  if (number < 10)
+  if (number + 1 < 10)
     number = `00${number + 1}`
-  else if (number >= 10 && number < 100)
+  else if (number + 1 >= 10 && number + 1 < 100)
     number = `0${number + 1}`
 
   plop.setGenerator('basicAlgo', {
