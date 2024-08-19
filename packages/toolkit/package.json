@@ -1,0 +1,19 @@
+{
+  "name": "@repo/toolkit",
+  "version": "1.0.0",
+  "description": "Data structure toolkit",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  }
+}

@@ -41,15 +41,15 @@ export default async function (plop) {
     actions: [{
       type: 'add',
       path: `src/${number}-{{dashCase name}}/index.ts`,
-      templateFile: 'plop-template/index.hbs',
+      templateFile: './packages/plop-template/index.hbs',
     }, {
       type: 'add',
       path: `src/${number}-{{dashCase name}}/index.spec.ts`,
-      templateFile: 'plop-template/index.spec.hbs',
+      templateFile: './packages/plop-template/index.spec.hbs',
     }, {
       type: 'add',
       path: `src/${number}-{{dashCase name}}/readme.md`,
-      templateFile: 'plop-template/readme.hbs',
+      templateFile: './packages/plop-template/readme.hbs',
     }],
   })
 };
